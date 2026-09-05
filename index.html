@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="referrer" content="no-referrer">
+    <meta
+      name="description"
+      content="Anonymous project page for Learning In-Hand 6D Object Pose Reaching."
+    >
+    <title>Learning In-Hand 6D Object Pose Reaching</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="POISE home">POISE</a>
+      <a class="header-link" href="#abstract">Abstract</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="paper-title">
+        <p class="eyebrow">Anonymous project page</p>
+        <h1 id="paper-title">Learning In-Hand 6D Object Pose Reaching</h1>
+        <p class="submission-note">Anonymous Submission · Under Double-Anonymous Review</p>
+        <p class="tagline">
+          Palm-relative object reaching in <span class="math">SE(3)</span>
+          through dexterous in-hand manipulation.
+        </p>
+      </section>
+
+      <section id="abstract" class="section" aria-labelledby="abstract-title">
+        <h2 id="abstract-title">Abstract</h2>
+        <div class="abstract-card">
+          <p>
+            In-hand manipulation allows multi-fingered dexterous hands to
+            reconfigure grasped objects without releasing and regrasping them.
+            This improves manipulation efficiency by reducing repeated grasp
+            acquisition and large arm motions. However, most learning-based
+            methods focus on reorientation, continuous rotation, or translation,
+            whereas many tasks require joint control of object position and
+            orientation. We formulate this capability as in-hand 6D object pose
+            reaching: starting from an existing grasp, coordinated finger motions
+            move the object to a palm-relative target pose. We present
+            <strong>POISE</strong> (<strong>P</strong>alm-relative
+            <strong>O</strong>bject reaching <strong>I</strong>n
+            <strong>SE(3)</strong>), a sim-to-real reinforcement learning
+            framework for this task. POISE combines diverse stable-grasp
+            initialization, goal- and geometry-conditioned control, an adaptive
+            6D goal curriculum, and a compact reward scheme for pose reaching and
+            grasp preservation. Diverse initialization raises held-out-grasp
+            success from 40.1% to 51.5% and post-drop recovery from 33.8% to
+            72.9%; the curriculum raises full-range success from 6.2% to 59.5%,
+            while the grasp-maintenance reward improves grasp stability. In
+            real-world experiments, POISE reaches successive 6D targets without
+            manual reset across multiple object geometries and wrist orientations,
+            and recovers from external disturbances.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Anonymous project page for double-anonymous review.</p>
+    </footer>
+  </body>
+</html>
