@@ -151,6 +151,10 @@ h2 {
   margin: 0;
 }
 
+.video-pair--simulation video {
+  aspect-ratio: 8 / 5;
+}
+
 .video-pair figcaption {
   margin: 0 0 8px;
   color: var(--muted);
