@@ -11,7 +11,9 @@
     >
     <title>Learning In-Hand 6D Object Pose Reaching</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="demo.css">
     <script src="videos.js" defer></script>
+    <script src="demo.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -20,6 +22,7 @@
         <a class="header-link" href="#overview">Overview</a>
         <a class="header-link" href="#abstract">Abstract</a>
         <a class="header-link" href="#user-specified">Experiments</a>
+        <a class="header-link" href="#interactive-demo">Demo</a>
       </nav>
     </header>
 
@@ -64,6 +67,20 @@
             and recovers from external disturbances.
           </p>
         </div>
+      </section>
+
+      <section id="interactive-demo" class="section" aria-labelledby="demo-title">
+        <div class="demo-section-heading">
+          <h2 id="demo-title">Interactive Demo</h2>
+          <a class="demo-open" href="demo.html">Open full page ↗</a>
+        </div>
+        <div class="demo-preview" data-policy-src="policy-demo/r-2c8930975c67ceeb/index.html">
+          <img src="assets/posters/policy-demo.webp" width="1100" height="700"
+            alt="Hammer grasped by the simulated hand" loading="lazy" decoding="async">
+          <button class="demo-launch" type="button" data-policy-launch>Start demo <span aria-hidden="true">→</span></button>
+          <noscript><a href="demo.html">Open the demo (JavaScript required)</a>.</noscript>
+        </div>
+        <p class="demo-note">Click inside the simulation to use keyboard controls. MuJoCo browser simulation; results may differ from IsaacLab and hardware.</p>
       </section>
 
       <section id="user-specified" class="section experiments" aria-labelledby="user-specified-title">
