@@ -76,12 +76,12 @@ main {
 }
 
 h1 {
-  max-width: 860px;
+  max-width: 100%;
   margin: 0 auto;
-  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
   line-height: 1.15;
   letter-spacing: -0.035em;
-  text-wrap: balance;
+  white-space: nowrap;
 }
 
 .authors {
@@ -221,6 +221,13 @@ footer p {
 
   .abstract-card {
     border-left-width: 2px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    white-space: normal;
+    text-wrap: balance;
   }
 }
 
