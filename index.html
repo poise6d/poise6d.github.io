@@ -15,18 +15,24 @@
   <body>
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="POISE home">POISE</a>
-      <a class="header-link" href="#abstract">Abstract</a>
+      <nav aria-label="Page navigation">
+        <a class="header-link" href="#overview">Overview</a>
+        <a class="header-link" href="#abstract">Abstract</a>
+        <a class="header-link" href="#user-specified">Experiments</a>
+      </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="paper-title">
-        <p class="eyebrow">Anonymous project page</p>
         <h1 id="paper-title">Learning In-Hand 6D Object Pose Reaching</h1>
-        <p class="submission-note">Anonymous Submission · Under Double-Anonymous Review</p>
-        <p class="tagline">
-          Palm-relative object reaching in <span class="math">SE(3)</span>
-          through dexterous in-hand manipulation.
-        </p>
+        <p class="authors">Anonymous Authors</p>
+        <div id="overview" class="overview-video">
+          <video controls playsinline preload="none" poster="assets/posters/overview.jpg"
+            aria-label="POISE overview video">
+            <source src="assets/videos/overview.mp4" type="video/mp4">
+            <a href="assets/videos/overview.mp4">Download the overview video</a>.
+          </video>
+        </div>
       </section>
 
       <section id="abstract" class="section" aria-labelledby="abstract-title">
@@ -57,6 +63,306 @@
             and recovers from external disturbances.
           </p>
         </div>
+      </section>
+
+      <section id="user-specified" class="section experiments" aria-labelledby="user-specified-title">
+        <h2 id="user-specified-title">Reaching User-Specified Targets</h2>
+        <article class="experiment" aria-labelledby="hammer-user-spe-label">
+          <h3 id="hammer-user-spe-label">Hammer</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hammer-user-spe.jpg"
+                aria-label="Reaching User-Specified Targets: Hammer, Main view">
+                <source src="assets/videos/hammer-user-spe.mp4" type="video/mp4">
+                <a href="assets/videos/hammer-user-spe.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hammer-user-spe-realsense.jpg"
+                aria-label="Reaching User-Specified Targets: Hammer, RealSense view">
+                <source src="assets/videos/hammer-user-spe-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/hammer-user-spe-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+
+        <article class="experiment" aria-labelledby="hexprism-user-1-label">
+          <h3 id="hexprism-user-1-label">Hexagonal Prism · Sequence 1</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hexprism-user-1.jpg"
+                aria-label="Reaching User-Specified Targets: Hexagonal Prism · Sequence 1, Main view">
+                <source src="assets/videos/hexprism-user-1.mp4" type="video/mp4">
+                <a href="assets/videos/hexprism-user-1.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hexprism-user-1-realsense.jpg"
+                aria-label="Reaching User-Specified Targets: Hexagonal Prism · Sequence 1, RealSense view">
+                <source src="assets/videos/hexprism-user-1-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/hexprism-user-1-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+
+        <article class="experiment" aria-labelledby="hexprism-user-2-label">
+          <h3 id="hexprism-user-2-label">Hexagonal Prism · Sequence 2</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hexprism-user-2.jpg"
+                aria-label="Reaching User-Specified Targets: Hexagonal Prism · Sequence 2, Main view">
+                <source src="assets/videos/hexprism-user-2.mp4" type="video/mp4">
+                <a href="assets/videos/hexprism-user-2.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hexprism-user-2-realsense.jpg"
+                aria-label="Reaching User-Specified Targets: Hexagonal Prism · Sequence 2, RealSense view">
+                <source src="assets/videos/hexprism-user-2-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/hexprism-user-2-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section id="random-goals" class="section experiments" aria-labelledby="random-goals-title">
+        <h2 id="random-goals-title">Continuous Random Goal Reaching</h2>
+        <article class="experiment" aria-labelledby="hammer-random-1-label">
+          <h3 id="hammer-random-1-label">Hammer · Sequence 1</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hammer-random-1.jpg"
+                aria-label="Continuous Random Goal Reaching: Hammer · Sequence 1, Main view">
+                <source src="assets/videos/hammer-random-1.mp4" type="video/mp4">
+                <a href="assets/videos/hammer-random-1.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hammer-random-1-realsense.jpg"
+                aria-label="Continuous Random Goal Reaching: Hammer · Sequence 1, RealSense view">
+                <source src="assets/videos/hammer-random-1-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/hammer-random-1-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+
+        <article class="experiment" aria-labelledby="hammer-random-2-label">
+          <h3 id="hammer-random-2-label">Hammer · Sequence 2</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hammer-random-2.jpg"
+                aria-label="Continuous Random Goal Reaching: Hammer · Sequence 2, Main view">
+                <source src="assets/videos/hammer-random-2.mp4" type="video/mp4">
+                <a href="assets/videos/hammer-random-2.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hammer-random-2-realsense.jpg"
+                aria-label="Continuous Random Goal Reaching: Hammer · Sequence 2, RealSense view">
+                <source src="assets/videos/hammer-random-2-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/hammer-random-2-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+
+        <article class="experiment" aria-labelledby="hexprism-random-label">
+          <h3 id="hexprism-random-label">Hexagonal Prism</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hexprism-random.jpg"
+                aria-label="Continuous Random Goal Reaching: Hexagonal Prism, Main view">
+                <source src="assets/videos/hexprism-random.mp4" type="video/mp4">
+                <a href="assets/videos/hexprism-random.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/hexprism-random-realsense.jpg"
+                aria-label="Continuous Random Goal Reaching: Hexagonal Prism, RealSense view">
+                <source src="assets/videos/hexprism-random-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/hexprism-random-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+
+        <article class="experiment" aria-labelledby="cube-random-label">
+          <h3 id="cube-random-label">Cube</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/cube-random.jpg"
+                aria-label="Continuous Random Goal Reaching: Cube, Main view">
+                <source src="assets/videos/cube-random.mp4" type="video/mp4">
+                <a href="assets/videos/cube-random.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/cube-random-realsense.jpg"
+                aria-label="Continuous Random Goal Reaching: Cube, RealSense view">
+                <source src="assets/videos/cube-random-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/cube-random-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+
+        <article class="experiment" aria-labelledby="bifru-random-label">
+          <h3 id="bifru-random-label">Square Bifrustum</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/bifru-random.jpg"
+                aria-label="Continuous Random Goal Reaching: Square Bifrustum, Main view">
+                <source src="assets/videos/bifru-random.mp4" type="video/mp4">
+                <a href="assets/videos/bifru-random.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/bifru-random-realsense.jpg"
+                aria-label="Continuous Random Goal Reaching: Square Bifrustum, RealSense view">
+                <source src="assets/videos/bifru-random-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/bifru-random-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section id="wrist-orientations" class="section experiments" aria-labelledby="wrist-orientations-title">
+        <h2 id="wrist-orientations-title">Reaching Under Different Wrist Orientations</h2>
+        <article class="experiment" aria-labelledby="vertical-label">
+          <h3 id="vertical-label">Vertical</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/vertical.jpg"
+                aria-label="Reaching Under Different Wrist Orientations: Vertical, Main view">
+                <source src="assets/videos/vertical.mp4" type="video/mp4">
+                <a href="assets/videos/vertical.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/vertical-realsense.jpg"
+                aria-label="Reaching Under Different Wrist Orientations: Vertical, RealSense view">
+                <source src="assets/videos/vertical-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/vertical-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+
+        <article class="experiment" aria-labelledby="side-label">
+          <h3 id="side-label">Side</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/side.jpg"
+                aria-label="Reaching Under Different Wrist Orientations: Side, Main view">
+                <source src="assets/videos/side.mp4" type="video/mp4">
+                <a href="assets/videos/side.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/side-realsense.jpg"
+                aria-label="Reaching Under Different Wrist Orientations: Side, RealSense view">
+                <source src="assets/videos/side-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/side-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+
+        <article class="experiment" aria-labelledby="front-label">
+          <h3 id="front-label">Front</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/front.jpg"
+                aria-label="Reaching Under Different Wrist Orientations: Front, Main view">
+                <source src="assets/videos/front.mp4" type="video/mp4">
+                <a href="assets/videos/front.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/front-realsense.jpg"
+                aria-label="Reaching Under Different Wrist Orientations: Front, RealSense view">
+                <source src="assets/videos/front-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/front-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section id="recovery" class="section experiments" aria-labelledby="recovery-title">
+        <h2 id="recovery-title">Recovery from External Disturbances</h2>
+        <article class="experiment" aria-labelledby="recovery-label">
+          <h3 id="recovery-label">Recovery</h3>
+          <div class="video-pair">
+            <figure>
+              <figcaption>Main view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/recovery.jpg"
+                aria-label="Recovery from External Disturbances: Recovery, Main view">
+                <source src="assets/videos/recovery.mp4" type="video/mp4">
+                <a href="assets/videos/recovery.mp4">Download this video</a>.
+              </video>
+            </figure>
+            <figure>
+              <figcaption>RealSense view</figcaption>
+              <video controls muted playsinline preload="none"
+                poster="assets/posters/recovery-realsense.jpg"
+                aria-label="Recovery from External Disturbances: Recovery, RealSense view">
+                <source src="assets/videos/recovery-realsense.mp4" type="video/mp4">
+                <a href="assets/videos/recovery-realsense.mp4">Download this video</a>.
+              </video>
+            </figure>
+          </div>
+        </article>
       </section>
     </main>
 
